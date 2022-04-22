@@ -2,12 +2,13 @@ $(function(){
     $('.glass img:nth-of-type(1)').click(function(){
         $('img:nth-of-type(1)').show();
     });
-});
 
-    $("love").click(function(){
+
+    $(".button").click(function(){
         toggleClass(".active-color")
     });
-// $(function() {
+});
+    // $(function() {
             
 //     $(".p_btn").click(function() {
 //         var $this = $(this);

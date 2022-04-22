@@ -85,7 +85,7 @@ nav ul li ul li a{
     display:block;
     padding:15px 0;
 }
-#slider button:nth-of-type(3){
+.button button:nth-of-type(3){
     border:none;
     border-radius: 5px;
     width:300px;
@@ -166,10 +166,13 @@ button{
     position:relative;
 }
 
-#main >img{
+#main >img:nth-of-type(1){
     margin-left:50px;
     width:100%;
-    
+}
+#main >img:nth-of-type(2){
+
+    width:100%;
 }
 .text{
     margin:60px 0 0 60px;
@@ -182,14 +185,65 @@ button{
     height:510px;
     border:1px solid #ddd;
 }
-.glass img{
+.glass{
+    margin-bottom:-380px;
+    width:400px;
+    height:150px;
+    overflow:hidden;
+    float:left;
+    margin-top:-145px;
+    margin-left:55px;
+}
+.glass button{
+    width:100px;
+    height:100px;
+    border:1px solid #ddd;
+    position:relative;
+}
+.glass button:nth-of-type(1){
+    background-image:url(../img/abo.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+.glass button:nth-of-type(2){
+    background-image:url(../img/abo2.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:100%;
+
+}
+.glass button:nth-of-type(3){
+    background-image:url(../img/abo4.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:100%;
+
+}
+
+.glass button:nth-of-type(1):hover{
+    opacity:0.7;
+    transition:0.2s
+
+}
+.glass button:nth-of-type(2):hover{
+    opacity:0.7;
+    transition:0.2s
+}
+.glass button:nth-of-type(3):hover{
+    opacity:0.7;
+    transition:0.2s
+}
+
+
+/* .glass img{
     position:relative;
     width:80px;
     height:80px;
     right:-60px;
     top:-143px;
     border:1px solid #ddd;
-}
+} */
 .glass img:hover{
     opacity:0.7;
     
@@ -202,10 +256,6 @@ button{
     justify-content: flex-end;
 }
 
-.glass img:nth-of-type(1):hover{
-    cursor:pointer;
-
-}
 
 /* 여기까지 slider */
 
