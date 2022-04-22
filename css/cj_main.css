@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+        
+        h3{
+            font-size:41px;
+            text-align:center;
+            color:#aeb5aa;
+            font-family: 'Chosunilbo_myungjo';
+        }
+        h2{
+            font-family: 'Chosunilbo_myungjo';
+        }
+        h2:nth-of-type(1){
+            font-family: 'LeeSeoyun';
+        }
+        span{
+            color:#777;
+        }
+        
+        .headbox{
+            width: 1028px;  
+            height: 1036px;
+            margin:0 auto;
+        }
+        #logo{
+            float:left;
+            background-color:#bcd1aa;
+            margin:100px 0;
+        }
+        #logo img{
+            width:145px;
+            height:145px;
+        }
+        nav{
+            padding:0 150px;
+            margin-top:-25px;
+        }
+        nav ul li{
+            float:left;
+            color:white;
+        }
+        nav ul li a{
+            color:white;
+            padding: 15px;
+            font-size:22px;
+            font-weight:bold;
+        }
+        nav a:hover{
+            background-color:#aeb5aa;
+            border-radius: 70px;
+            transition:0.3s
+        }
+        .pro{
+            float:right;
+            margin-right:-243px;
+            width:300px;
+            height:30px;
+        }
+        .pro img{
+            padding:0px 5px 0 15px;
+            margin-left:19px;
+        }
+        h2{
+            position:relative;
+            margin:30px 0px;
+        }
+        h2:nth-of-type(1){
+                color:#603764;
+                font-size:63px;
+                top: 45px;
+        }
+        h2:nth-of-type(2){
+            color:white;
+            font-size:83px;
+            margin-top:-30px;
+            left: 80px;
+            top: 60px;
+        }
+        #slider{
+            width:1141px;
+            height:790px;
+            margin:100px auto;
+        }
+        div .slidebox{
+            width:176px;
+            height: 115px;
+            float:left;
+            background-color: white;
+            margin: 90px 50px 0 57px; 
+        }
+        .slidebox img{
+            width:75%;
+            margin:-50px 25px;
+            position:relative;
+        }
+        .slidebox{
+            border-radius:20px;
+            box-shadow:5px 5px 6px #ddd;    
+        }
+        .slidebox span{
+            text-align:center;
+            display:block;
+            width:100%;
+            margin:55px 0 0 0;
+            font-weight: bold;
+            font-size:15px;
+            color:#888;
+        }
+        .imgbox img{
+            width: 564px;
+            height: 395px;
+            margin:100px 0;
+        }
+        section{
+            width: 1336px;
+            height: 931px;
+            margin:0 auto;
+            margin-top :-50px;
+        }
+        section .img{
+            width: 281px;
+            height: 350px;
+            background-color:white;
+            float:left;
+            margin: 30px 10px 0 35px;
+        }
+        section img{
+            width:100%;
+            position:relative;
+            border-radius: 15px;
+        }
+        section a:hover{
+            transition :0.5s;
+            opacity:0.8;
+            transform:scale(1,1);
+        }
+        section img:hover{
+            transform:scale(1.1);
+            transition:0.3s
+        }
+        #section2 a:hover{
+            transition :0.5s;
+            opacity:0.8;
+        }
+        #section2 img:hover{
+            transform:scale(1.1);
+            transition:0.3s
+        }
+        .headnum u{
+            margin-top:-287px;
+            margin-left:10px;
+            position:absolute;
+            display: inline-block;
+            font-size:30px;
+            font-weight: bold;
+            opacity:0.5
+        }
+        section span{
+            color:#777;
+        }
+        #section2{
+            width: 1120px;
+            height: 672px;
+            margin:0 auto;
+            margin-top:-140px;
+        }
+        #section2 h3{
+            display:block;
+            padding:80px 0 0 0;
+        }
+        #section2 .img{
+            width: 279px;
+            height: 339px;
+            background-color:white;
+            float:left;
+            margin: 50px 30px 0 55px;
+        }
+        #section2 img{
+            width:100%;
+            height:270px;
+            border-radius: 15px;
+        }
+        #section2 .cart{
+            width:50px;
+            height:50px;
+            border-radius: 50%;
+        }
+        
+        .footbox{
+            width:1335px;
+            background-color:#bcd1aa;
+            height:494px;
+            margin-bottom:-100px;
+        }
+        .textimg input[type="text"]{
+            border-radius: 30px;
+            border:none;
+            width:450px;
+            height:40px;
+            padding-left:55px;
+            margin:30px 320px;
+            color:#666;
+            background-image: url(../img/magnifyingglass.jpg),url(../img/list_menu_more.jpg);
+            background-repeat:no-repeat;
+            /* background-position:center left,center right; */
+            background-position:5px -2px, 465px 5px;
+            background-size:45px,30px;
+        }
+        /* .footbox img{
+            widtH: 50px;
+            height:50px;
+            position:relative;
+            margin-left:400px;
+            margin-top:30px;
+            border-radius: 50%;
+        } */
+        /* #footnav ul{
+            width:310px;
+            height:300px;
+            float:left;
+            margin:25px 27px 0 0;
+        }
+        #footnav ul li{
+            padding:30px 80px 0 100px;
+            float:left;
+        }
+        #footnav li a{
+            color:white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .innav a{
+            color:white;
+            font-size:17px;
+        } */
+        .footbox{
+            margin:0 auto;            
+        }
+        .footbox >div{
+            margin:0px 85px 0 85px;
+            float:left;
+        }
+        .footbox h3 a{
+            color:white;
+            font-size:27px;
+            text-align:center;
+            margin: 0 auto;
+        }
+        .innav a{
+            color:white;         
+            display:block;
+            padding:20px 0;
+        }
+        #FOLLOWUS{
+            width:160px;
+            height:300px;
+            /* float:right; */
+        }
+        #FOLLOWUS h3 a{
+            font-size:26px;
+        }
+        #footimg{
+            display:flex;
+            box-sizing:border-box;
+        }
+        #footimg img{
+            width:40px;
+            height:40px;
+            padding:15px 10px;
+        }
+        @font-face {
+            font-family: 'Chosunilbo_myungjo';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'LeeSeoyun';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }

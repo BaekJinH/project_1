@@ -1,0 +1,310 @@
+@charset "utf-8";
+
+.headbox{
+    width:1150px;
+    height:100px;;
+    margin:0 auto;
+}
+#logo{
+    width: 100px;
+    height:100px;
+    float:left;
+    margin:0 auto;
+    margin:15px 0 15px 0;
+}
+#logo img{
+    width:100%;
+    height:100%;
+    margin-left:30px;
+}
+.login{
+    float:right;
+    margin-right:-25px;
+    margin-top:10px;    
+}
+.login ul li{
+    float:right;
+}
+.login ul li a{
+    color:white;
+    margin:0px 25px 0 0;
+}
+nav{
+    width:680px;
+    height:50px;
+    float:left;
+    clear:both;
+}
+
+nav >ul>li{
+    display:inline-block;
+    padding:15px 35px;
+}
+nav >ul >li >a{
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+}
+nav>ul>li:hover{
+    background-color:green;
+}
+nav ul ul{
+    display:none;
+}
+nav ul li:hover ul{
+    display:block;position:absolute;
+}
+nav ul li ul li a{
+    color:black;
+    font-size:14px;
+}
+
+
+.pro{
+    width:460px;
+    height:50px;
+    float:right;
+    position:relative;
+    left:45px;
+
+}
+.pro img{
+    float:right;
+    margin:0px 50px 0px 0px;
+}
+
+/* 여기까지 header */
+
+
+#slider{
+    width:1150px;
+    height:800px;
+    margin:0 auto;
+}
+#slider span{
+    display:block;
+    padding:15px 0;
+}
+#slider button:nth-of-type(3){
+    border:none;
+    border-radius: 5px;
+    width:300px;
+    height:50px;
+    background-color:green;
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+}
+button{
+    border:0.5px solid #ddd;
+    margin:5px;
+}
+.button button:nth-of-type(3):hover{
+    cursor:pointer;
+    opacity:0.8;
+    transition:0.3s
+}
+.button button:nth-of-type(1){
+    background-image:url(../img/love.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:50px;
+    width:50px;
+    height:50px;
+}
+.button button:nth-of-type(1):hover{
+    cursor:pointer;
+    opacity:0.6;
+}
+.button button:nth-of-type(1):active{
+    background-image:url(../img/love2.jpg);
+    opacity:1;
+}
+.button button:nth-of-type(2):hover{
+    opacity:0.6;
+    cursor:pointer;
+    
+}
+.button button:nth-of-type(2){
+    background-image:url(../img/bel.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:50px;
+    width:50px;
+    height:50px;
+    
+}
+.button button:nth-of-type(2):active{
+    background-image:url(../img/bel2.jpg);
+    opacity:1;
+}
+.button button{
+    display:inline-block;
+}
+.container{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: flex-start ;
+    align-content: flex-start;
+    margin:10px;
+}
+.text hr{
+    border-width:1px 0 0 0;
+    border-style:solid;
+    border-color:#ddd;
+    height:1px;
+}
+.text h3:nth-of-type(1){
+    font-size:30px;
+}
+.text h3:nth-of-type(2){
+    font-size:20px;
+    margin:0px 0px 10px 0px;
+}
+#main{
+    margin-top:15px;
+    position:relative;
+}
+
+#main >img{
+    margin-left:50px;
+    width:100%;
+    
+}
+.text{
+    margin:60px 0 0 60px;
+}
+.text span:nth-of-type(1){
+    color:#888
+}
+#main > img:nth-of-type(1){
+    width:470px;
+    height:510px;
+    border:1px solid #ddd;
+}
+.glass img{
+    position:relative;
+    width:80px;
+    height:80px;
+    right:-60px;
+    top:-143px;
+    border:1px solid #ddd;
+}
+.glass img:hover{
+    opacity:0.7;
+    
+}
+.button{
+    width:500px;
+    display:flex;
+    flex-flow:row nowrap;
+    align-content:center;
+    justify-content: flex-end;
+}
+
+.glass img:nth-of-type(1):hover{
+    cursor:pointer;
+
+}
+
+/* 여기까지 slider */
+
+
+section{
+    width:1150px;
+    height:5600px;
+    margin:0 auto;
+    background-color:violet;
+}
+.container2{
+    width:100%;
+    height:50px;
+    display:flex;
+    flex-flow:row nowrap;
+    margin-left:0px;
+}
+.container2 > button{
+    margin:0 auto;
+    border:1px solid #ddd;
+    background-color:rgb(253, 244, 244);
+    width:300px;
+    height:50px;
+    color:#555;
+    font-weight:bold;
+    font-size:15px;
+}
+.container2 > button:hover{
+    cursor:pointer;
+    background-color:white;
+}
+.abo{
+    background-color:yellow;
+    width:100%;
+    height:500px;
+    margin-top:30px;
+    background-image:url(../img/secabo3.jpg);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+/* section end */
+.footbox{
+    width:1150px;
+    height:300px;
+    background-color:aquamarine;
+    margin:0 auto;
+}
+.footbox{
+    margin:0 auto;            
+}
+.footbox >div{
+    margin:0px 85px 0 85px;
+    float:left;
+}
+.footbox h3 a{
+    color:white;
+    font-size:27px;
+    text-align:center;
+    margin: 0 auto;
+}
+.innav a{
+    color:white;         
+    display:block;
+    padding:20px 0;
+}
+#FOLLOWUS{
+    width:160px;
+    height:300px;
+    /* float:right; */
+}
+#FOLLOWUS h3 a{
+    font-size:26px;
+}
+#footimg{
+    display:flex;
+    box-sizing:border-box;
+}
+#footimg img{
+    width:40px;
+    height:40px;
+    padding:15px 10px;
+}
+.footbox{
+    width:1335px;
+    background-color:#bcd1aa;
+    height:396px;
+    margin-bottom:-100px;
+}
+.textimg input[type="text"]{
+    border-radius: 30px;
+    border:none;
+    width:450px;
+    height:40px;
+    padding-left:55px;
+    margin:30px 320px;
+    color:#666;
+    background-image: url(../img/magnifyingglass.jpg),url(../img/list_menu_more.jpg);
+    background-repeat:no-repeat;
+    /* background-position:center left,center right; */
+    background-position:5px -2px, 465px 5px;
+    background-size:45px,30px;
+}
