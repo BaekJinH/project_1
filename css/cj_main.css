@@ -46,8 +46,8 @@
             font-weight:bold;
         }
         nav a:hover{
-            background-color:#aeb5aa;
-            border-radius: 70px;
+            background-color:green;
+            border-radius: 20px;
             transition:0.3s
         }
         .pro{
