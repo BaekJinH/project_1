@@ -37,7 +37,7 @@ nav{
     width:680px;
     height:50px;
     float:left;
-    clear:both;
+    /* clear:both; */
 }
 
 nav >ul>li{
@@ -63,6 +63,7 @@ nav ul li:hover ul{
     position:absolute;
 }
 
+
 /* 목록 세분화 */
 .pro{
     width:460px;
@@ -80,6 +81,7 @@ nav ul li:hover ul{
     position:sticky;
     top:0;
 }
+
 /* 여기까지 header */
 
 
