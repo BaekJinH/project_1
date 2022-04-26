@@ -10,9 +10,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/sub.js">
     </script>
+    <script src="js/sub_2js.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/Cj_sub.css">
     <link rel="stylesheet" href="css/common_2.css">
+    <script language="JavaScript"></script>
 </head>
 <body>
     <header>
@@ -31,8 +33,21 @@
                 <ul>
                     <li><a href="#">BEST SELLER</a></li>
                     <li><a href="#">MEAL KIT</a></li>
-                    <li><a href="#">FRUIT</a></li>
-                    <li><a href="#">SALAD</a></li>
+                    <li><a href="#">FRUIT</a>
+                        <ul>
+                            <li>제철과일</li>
+                            <li>국산과일</li>
+                            <li>수입과일</li>
+                            <li>간편과일</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">SALAD</a>
+                        <ul>
+                            <li>도시락/밥류</li>
+                            <li>샐러드</li>
+                            <li>닭가슴살</li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
             <div class="pro">
@@ -47,7 +62,7 @@
     
     <div id="slider">
         <div class="container">
-        <div class="text" style="order:1"> 
+        <div class="text"> 
             <h3>아보카도 900g(3입)</h3>
             <span>부담없이 먹는 후숙 과일</span>
             <h3>8,900원</h3>
@@ -64,32 +79,28 @@
                 <span>유통기한&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별도의 유통기한은 없으나 빠르게 드시기 바랍니다.</span>
             <hr>
                 <span>구매수량</span>
-                <button type="button" class="btn0"></button>
+                    <!-- <input type="button" class="btn" onclick='count("plus")' value="+">
+                    <input type="button" class="btn" onclick='count("minus")'value='-'>
+                    <div id="result">0</div> -->
                 <br>
-            <div class="button">
+            <div class="button" >
                 <button type="button" class="love"></button>
                 <button type="button" class="bell"></button>
                 <button type="button" >장바구니 담기</button>
             </div>
         </div>
-        <div id="main" style="order:-1">
-                <img src="img/abo.jpg" alt="아보카도1" >
-                <!-- <img src="img/abo2.jpg" alt="아보카도2" >
-                <img src="img/abo3.jpg" alt="아보카도3" > -->
-                <!-- <div class="position">
-                    <img src="img/left (2).png" alt="">
-                    <img src="img/" alt="">
-                </div> -->
+            <div id="main" style="order:-1" class="slide">
+                <img src="img/abo.jpg" alt="아보카도1" id="one">
+                <img src="img/abo0.jpg" alt="아보카도2" id="two">
+                <img src="img/abo3.jpg" alt="아보카도3" id="three">
             </div>
+            
         </div>
         <div class="glass">
             <button type="button" class="plus" class="btn1"></button>
             <button type="button" class="plus" class="btn2"></button>
             <button type="button" class="plus" class="btn3"></button>
-            <!-- <img src="img/abo.jpg" alt="상세정보1"> -->
-            <!-- <img src="img/abo2.jpg" alt="상세정보2"> -->
-            <!-- <img src="img/abo3.jpg" alt="상세정보3">     -->
-        </div>
+        </div>        
     </div>
     
     <!-- end slider -->
@@ -111,7 +122,7 @@
     <footer>
         <div class="footbox">
             <div class="textimg">
-                <input type="text" placeholder="찾으시는 것을 입력하세요">
+                <input type="text" placeholder="찾으시는 것을 입력하세요.">
             </div>
                     <div id="INFORMATION">
                         <h3><a href="#">INFORMATION</a></h3>
