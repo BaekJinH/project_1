@@ -4,7 +4,6 @@
     width:1150px;
     height:100px;;
     margin:0 auto;
-    position:sticky;
 }
 #logo{
     width: 100px;
@@ -77,7 +76,10 @@ nav ul li:hover ul{
     float:right;
     margin:0px 50px 0px 0px;
 }
-
+.sticky{
+    position:sticky;
+    top:0;
+}
 /* 여기까지 header */
 
 
