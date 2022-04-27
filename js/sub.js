@@ -16,28 +16,28 @@ $(function(){
     });
 })
 $(function(){
-    $('.container > button:nth-of-typeof(1)').click(function(){
-        $()
-        $()
-        $()
-        $()
+    $('.container2 > button:nth-of-typeof(1)').click(function(){
+        $('#intro').fadeIn
+        $('#pro').hide
+        $('#deli').hide
+        $('#review').hide
     });
-    $('.container > button:nth-of-typeof(2)').click(function(){
-        $()
-        $()
-        $()
-        $()
+    $('.container2 > button:nth-of-typeof(2)').click(function(){
+        $('#pro').fadeIn
+        $('#intro').hide
+        $('#deli').hide
+        $('#review').hide
     });
-    $('.container > button:nth-of-typeof(3)').click(function(){
-        $()
-        $()
-        $()
-        $()
+    $('.container2 > button:nth-of-typeof(3)').click(function(){
+        $('#deli').fadeIn
+        $('#intro').hide
+        $('#pro').hide
+        $('#review').hide
     });
-    $('.container > button:nth-of-typeof(4)').click(function(){
-        $()
-        $()
-        $()
-        $()
+    $('.container2 > button:nth-of-typeof(4)').click(function(){
+        $('#review').fadeIn
+        $('#intro').hide
+        $('#pro').hide
+        $('#deli').hide
     });
 });

@@ -8,19 +8,18 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/sub.js">
-    </script>
+    <script src="js/sub.js"></script>
     <script src="js/sub_2js.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/Cj_sub.css">
     <link rel="stylesheet" href="css/common_2.css">
-    <script language="JavaScript"></script>
 </head>
-<body>
+<body onload="init();">
+    <form name="form" method="get">
     <header>
         <div class="headbox">
             <div id="logo">
-                <img src="img/CJ_mark.jpg" alt="">
+                <a href="index.html"><img src="img/CJ_mark.jpg" alt=""></a>
             </div>
             <div class="login">
                 <ul>
@@ -32,38 +31,17 @@
             <div class="sticky">
                 <nav class="headnav">
                     <ul class="dep1">
-                            <li>
-                                <a href="">BEST SELLER</a>
-                                <ul class="dep2">
-                                    <li><a href="#">메뉴1</a></li>
-                                    <li><a href="#">메뉴2</a></li>
-                                    <li><a href="#">메뉴3</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="">MEAL KIT</a>
-                                <ul class="dep2">
-                                    <li><a href="#">메뉴1</a></li>
-                                    <li><a href="#">메뉴2</a></li>
-                                    <li><a href="#">메뉴3</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="">FRUIT</a>
-                            <ul class="dep2">
-                                <li><a href="#">제철과일</a></li>
-                                <li><a href="#">국산과일</a></li>
-                                <li><a href="#">수입과일</a></li>
-                                <li><a href="#">간편과일</a></li>
-                            </ul>
+                        <li>
+                            <a href="">BEST SELLER</a>
+                        </li>
+                        <li>
+                            <a href="">MEAL KIT</a>
+                        </li>
+                        <li>
+                            <a href="">FRUIT</a>
                         </li>
                         <li>
                             <a href="">SALAD</a>
-                            <ul class="dep2">
-                                <li><a href="#">도시락/밥류</a></li>
-                                <li><a href="#">샐러드</a></li>
-                                <li><a href="#">닭가슴살</a></li>
-                            </ul>
                         </li>
                     </ul>
                 </nav>
@@ -81,25 +59,33 @@
     <div id="slider">
         <div class="container">
         <div class="text"> 
-            <h3>아보카도 900g(3입)</h3>
+            <h3>아보카도 900g(5입)</h3>
             <span>부담없이 먹는 후숙 과일</span>
-            <h3>8,900원</h3>
+            <h3>13,900원</h3>
             <hr>
                 <span >판매단위 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1팩</span><br>
-                <span >중량/용량&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2입</span>
+                <span >중량/용량&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5입</span>
             <hr>
                 <span>배송구분&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;택배배송</span>
             <hr>
                 <span>원산지&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;페루산</span>
             <hr>
-                <span>포장타입&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;스티로폼</span>
+                <span>포장타입&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;플라스틱</span>
             <hr>
                 <span>유통기한&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별도의 유통기한은 없으나 빠르게 드시기 바랍니다.</span>
             <hr>
                 <span>구매수량</span>
-                    <!-- <input type="button" class="btn" onclick='count("plus")' value="+">
-                    <input type="button" class="btn" onclick='count("minus")'value='-'>
-                    <div id="result">0</div> -->
+                <div class="num">
+                    <input type="hidden" name="sell_price" value="13900">
+                    <input type="button" value="-" onclick="del();" id="pl">
+                    <input type="text" name="amount" value="1" size="3" max="" onchange="change();" id="price">
+                    <input type="button" value="+" onclick="add();" id="min">
+                </div>
+                <div class="sumpri">
+                    <br>
+                
+                    상품금액 : <input type="text" name="sum" size="11" readonly id="sum" >원
+                </div>    
                 <br>
             <div class="button" >
                 <button type="button" class="love"></button>
@@ -107,10 +93,10 @@
                 <button type="button" >장바구니 담기</button>
             </div>
         </div>
-            <div id="main" style="order:-1" class="slide">
-                <img src="img/abo.jpg" alt="아보카도1" id="one">
-                <img src="img/abo0.jpg" alt="아보카도2" id="two">
-                <img src="img/abo3.jpg" alt="아보카도3" id="three">
+            <div id="main" style="order:-1" class="slide" id="slideshow">
+                    <img src="img/abo.jpg" alt="아보카도1" id="one">
+                    <img src="img/abo0.jpg" alt="아보카도2" id="two">
+                    <img src="img/abo3.jpg" alt="아보카도3" id="three">
             </div>
             
         </div>
@@ -122,18 +108,17 @@
     </div>
     
     <!-- end slider -->
-
+    <div class="container2">
+        <button type="button" class="scbutton">상품설명</button>
+        <button type="button" class="scbutton">상세정보</button>
+        <button type="button" class="scbutton">배송</button>
+        <button type="button" class="scbutton">후기(1400)</button>
+    </div>
     <section>
-            <div class="container2">
-                <button type="button" class="scbutton">상품설명</button>
-                <button type="button" class="scbutton">상세정보</button>
-                <button type="button" class="scbutton">후기(1400)</button>
-                <button type="button" class="scbutton">문의</button>
-            </div>
-                <div class="abo">
-            </div>
-                <!-- <h3>숲속의 버터</h3>
-                <h2>아보카도</h2> -->
+            <div id="intro"></div>
+            <div id="pro"></div>
+            <div id="deli"></div>
+            <div id="review"></div>                
     </section>
           
     <!-- end section -->
@@ -186,10 +171,7 @@
                     </div>
         </div>
 </footer>
-    <a href="https://blog.naver.com/PostList.naver?blogId=red0808&from=postList&categoryNo=43">많은 예시들</a>
-    <a href="https://www.kurly.com/shop/goods/goods_view.php?&goodsno=70">main</a>
-    <a href="https://hyoeunkim126.github.io/portpolio_git/sub.html#m3">main2</a>
-    <a href="https://fe2oz.github.io/shoppingmall.html/sub.html">***중요 참고하기</a>
-    <a href="https://www.phpschool.com/gnuboard4/bbs/board.php?bo_table=qna_html&wr_id=227935">slider</a>
+    <a href="https://taeyeonimda.blogspot.com/2020/04/blog-post.html">123</a>    
+</form>
 </body>
 </html>

@@ -37,7 +37,7 @@ nav{
     width:680px;
     height:50px;
     float:left;
-    /* clear:both; */
+    clear:both;
 }
 
 nav >ul>li{
@@ -59,7 +59,6 @@ nav ul ul{
 }
 
 nav ul li:hover ul{
-    display:block;
     position:absolute;
 }
 
@@ -120,6 +119,7 @@ nav ul li:hover ul{
 button{
     border:0.5px solid #ddd;
     margin:5px;
+    color:#777
 }
 .button button:nth-of-type(3):hover{
     cursor:pointer;
@@ -224,7 +224,7 @@ button{
     height:150px;
     overflow:hidden;
     float:left;
-    margin-top:-145px;
+    margin-top:-179px;
     margin-left:79px;
 }
 .glass button{
@@ -271,15 +271,7 @@ button{
 }
 
 
-/* .glass img{
-    position:relative;
-    width:80px;
-    height:80px;
-    right:-60px;
-    top:-143px;
-    border:1px solid #ddd;
-} */
-.glass img:hover{
+img:hover{
     opacity:0.7;
     
 }
@@ -291,6 +283,59 @@ button{
     justify-content: flex-end;
 }
 
+.sell_price{
+    border:none;
+}
+.num{
+    border:1px solid #ddd;
+    width:113.3px;
+    margin-left:125px;
+    margin-top:-37px;
+}
+#pl{
+    border:none;
+    width:30px;
+    height:30px;
+    cursor:pointer;
+
+}
+
+#min{
+    border:none;
+    width:30px;
+    height:30px;
+    cursor:pointer;
+}
+#price{
+    border:none;
+    text-align:center;
+}
+#sum{
+    border:none;
+    font-size:30px;
+    text-align:right;
+    width:110px;
+    font-weight: bold;
+}
+.sumpri{
+    display:inline-block;
+    float:right;
+}
+#slideshow{
+    animation:slide 3s infinite;
+}
+
+@keyframes slide{
+    0%{
+        background-image: url(../img/abo0.jpg);
+    }
+    50%{
+        background-image: url(../img/abo3.jpg);
+    }
+    100%{
+
+    }
+}
 /* 여기까지 slider */
 
 
@@ -298,32 +343,34 @@ section{
     width:1150px;
     height:5600px;
     margin:0 auto;
-    background-color:violet;
     background-image:url(../img/sub_2.jpg);
     background-repeat:no-repeat;
     background-position:center;
     background-size:100%;
 }
 .container2{
-    width:100%;
+    width:1150px;
     height:50px;
     display:flex;
     flex-flow:row nowrap;
     margin-left:0px;
+    margin:0 auto;
 }
 .container2 > button{
     margin:0 auto;
     border:1px solid #ddd;
-    background-color:rgb(253, 244, 244);
+    background-color:#eee;
     width:300px;
     height:50px;
-    color:#555;
+    color:#666;
     font-weight:bold;
     font-size:15px;
 }
 .container2 > button:hover{
     cursor:pointer;
     background-color:white;
+    color:black;
+    font-weight:bold;
 }
 /* .abo{
     background-color:yellow;
